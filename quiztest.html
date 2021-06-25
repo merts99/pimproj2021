@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang ="en">
+ <title>Quiz Application</title>
+<html lang ="en">
+<link rel="stylesheet" href="APICSS.css">
+	<script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&format=json&page=2", function(data){
+	console.log(data);
+	var Image = "https://lh3.googleusercontent.com/mZj-trnVh6jeUDsl1o0a3xNXPat_UOZtKecS4LaZdTLcNoIqtd_yf6beJKCUVzk3NT5SSFeQ-hOzJEOOSV9sg8dHE6VjFjUrGfxwe5Sg=s0";
+	console.log(Image)
+	var Name = data.artObjects[0].title;
+	
+	$('.artwork').attr('src', Image);
+	$('.name_artwork').append(Name);
+})
+
+</script>
+<head>
+<body>
+<div class="topnav">
+  <a class="active" a href="Homepage.html">Home</a>
+  <a class="active" a href="quiztest.html">HistoQuiz</a>
+  <a class= "active" a href = "question.html">Post a question</a>
+  <a class="active" a href="environment.html">Virtual Rembrandt Room</a>
+  <a class="active" a href="environment_2.html">Virtual Vincent van Gogh Room</a>
+  <a class="active" a href="environment_3.html">Virtual Frans Hals Room </a>
+  </body>
+ </div>
+<head>
+</head>
+
+<mark>Q1. What is the philosophical background of this painting?<br></mark>
+<body>
+ </div>
+	<div class = "art-container">
+		<img class = "artwork" width="400" height="300" alt="">
+		<p class = "name_artwork">Name: </p>
+		<p class = "year"></p>
+	</div>
+<p style= "padding: 10px; color: white; background-color: #af4c4c; border: #550A21 2px solid">
+<input type="radio" name="question1" id="correct1">The painter of this painting wanted to transfer a stillive to the audience so that everyone could enjoy a table with food <br>
+<input type="radio" name="question1">The painter was not really trying to make something clear <br>
+<input type="radio" name="question1">The painter was very hungry and instead of eating he or she decided to paint something<br>
+<input type="radio" name="question1">No idea<br></p>
+
+ <script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&format=json&page=2", function(data){
+	console.log(data);
+	var Imagee = "https://lh3.googleusercontent.com/SjuKgVllMl-wQ9sRUXch29gQpNg2NDiNSRsPGft0CzbGOIFwZktLNz7_689URZOGxOHFO76B722WD1RibHoBdOm7csga=s0";
+	console.log(Imagee)
+	var Namee = data.artObjects[1].title;
+	
+	$('.artworkk').attr('src', Imagee);
+	$('.name_artworkk').append(Namee);
+})
+
+</script>
+
+
+
+<span style="background-color:#af4c4c">Q2. Who painted this painting?<br></span>
+<body>
+ </div>
+<div class = "art-container">
+		<img class = "artworkk" width="400" height="300" alt="">
+		<p class = "name_artworkk">Name: </p>
+		<p class = "year"></p>
+	</div>
+<p style= "padding: 10px; color: white; background-color: #af4c4c; border: #550A21 2px solid">
+<input type="radio" name="question2" >Vincent van Gogh <br>
+<input type="radio" name="question2">Andy Warhol <br>
+<input type="radio" name="question2" id="correct2">Joachim Beuckelaer<br>
+<input type="radio" name="question2">Salvador Dali <br></p>
+
+ <script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&format=json&page=2", function(data){
+	console.log(data);
+	var Imageee = "https://lh3.googleusercontent.com/nfJiRConmXf4QR1bK3-E456qIEp2bYtuemyy3P3t7PonntyGJ8iPzFNKJPhZFCSSmJmj2AHePE4V1xl3BOz2NT8mfbNg=s0";
+	console.log(Imageee)
+	var Nameee = data.artObjects[2].title;
+	
+	$('.artworkkk').attr('src', Imageee);
+	$('.name_artworkkk').append(Nameee);
+})
+
+</script>
+
+<span style="background-color:#af4c4c">Q3. What type of painting style has been used for this painting <br></span>
+<body>
+ </div>
+<div class = "art-container">
+		<img class = "artworkkk" width="400" height="300" alt="">
+		<p class = "name_artworkkk">Name: </p>
+		<p class = "year"></p>
+	</div>
+<p style= "padding: 10px; color: white; background-color: #af4c4c; border: #550A21 2px solid">
+<input type="radio" name="question3">Cubism, the texture of the windmill has the form of little cubes if you look closely and the style of the painting also has a confusing perspective. Eventually, the painter wanted to give a view of
+a more realistic Netherlands, yet not so different from how people now know it.<br>
+<input type="radio" name="question3"id="correct3">Impressionism, the reflection of the windmill in the water accomplishes an effect that was called "double air". The wholeness is displayed in a powerful brushstroke.<br>
+<input type="radio" name="question3">Pop-Art, the reflection of the painting resembles a figurative form of a consumptive society and there is a lot of use of commercial and contemporary objects <br>
+<input type="radio" name="question3">Pointilism, the windmill is painted by creating dots in combination with paintbrushes, the same goes for the reflection of the water. The painter wanted to create a more realistic view on life in the
+Netherlands. <br></p>
+
+ <script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&format=json&page=2", function(data){
+	console.log(data);
+	var Imageeeee = "https://lh3.googleusercontent.com/BhqE25cpBVQ8tZUZFsWs4W-cf6LRU0fFtUcC7k24OOjW5en5xJ7mNSfIZQKJZncp7M1B6f6PJrbr0H0MivzQzw_fXJU=s0";
+	console.log(Imageeeee)
+	var Nameeeee = data.artObjects[3].title;
+	
+	$('.artworkkkkk').attr('src', Imageeeee);
+	$('.name_artworkkkkk').append(Nameeeee);
+})
+
+</script>
+
+<span style="background-color:#af4c4c">Q4. What is the meaning of the painting?<br></span>
+<body>
+ </div>
+<div class = "art-container">
+		<img class = "artworkkkkk" width="400" height="300" alt="">
+		<p class = "name_artworkkkkk">Name: </p>
+		<p class = "year"></p>
+	</div>
+<p style= "padding: 10px; color: white; background-color: #af4c4c; border: #550A21 2px solid">
+<input type="radio" name="question4">The painter wants to show the tragedy of his lifetime by displaying despair and destruction by using a triptych. People are shown to be suffering and fighting each other over objects,
+which displays the greed of mankind.<br>
+<input type="radio" name="question4">The painter wants to show a medieval activity to demonstrate that even in the 16th century people found it important to stick to their traditions<br>
+<input type="radio" name="question4">This painting tells a story in the Bible, Ezechiel 25:17, where Jezus has returned back to the land of the living and that this had to be celebrated by dancing and melting
+their earrings to honor God<br>
+<input type="radio" name="question4" id="correct4"> This painting tells a story from the Bible, Exodus 32, where the people of Israel create an idol by melting down their earrings to a golden calf. This fire offer
+is to honor their "new" God<br>
+</p>
+
+ <script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&format=json&page=2", function(data){
+	console.log(data);
+	var Imageeeeee = "https://lh3.googleusercontent.com/SwwiVAxnwFE_s-k7-bPOZ6jnGfcuVDJoZ-ofLb0Zispb-mJdsfasrE1nTPRcGDPwyEqY0txKpjPcAWaIIltYvvPtDA8=s0";
+	console.log(Imageeeeee)
+	var Nameeeeee = data.artObjects[4].title;
+	
+	$('.artworkkkkkk').attr('src', Imageeeeee);
+	$('.name_artworkkkkkk').append(Nameeeeee);
+})
+</script>
+<span style="background-color:#af4c4c">Q5. What does Francisco de Goya try to express with this painting?<br></span>
+<body>
+ </div>
+<div class = "art-container">
+		<img class = "artworkkkkkk" width="400" height="300" alt="">
+		<p class = "name_artworkkkkkk">Name: </p>
+		<p class = "year"></p>
+	</div>
+<p style= "padding: 10px; color: white; background-color: #af4c4c; border: #550A21 2px solid">
+<input type="radio" name="question5">de Goya tries to express the manlyhood that was very common in the 19th century, such that even high status men catered to this type of behaviour.<br>
+<input type="radio" name="question5">de Goya attempted to create a view of a regular man who seems to be poor to point out that not everything was as it seemed in the 19th century.<br>
+<input type="radio" name="question5" id="correct5">de Goya depicts the hands of his subject in his pocket and his open shirt expresses informality which might be an implication of his relation with his subject.<br>
+<input type="radio" name="question5">de Goya wanted to point out that in the 19th century, having an informal style was quite common because a large part of society was part of the worker group. This group was known
+for being regular and not so formal as the higher ups in society.<br>
+</p>
+
+<span style="background-color:#af4c4c">Q6. What was the philosophical idea of Imannuel Kant? Who is known for his ideas that were broadly discussed during the Age of Enlightenment<br></span>
+<p style= "padding: 10px; color: white; background-color: #af4c4c; border: #550A21 2px solid">
+<input type="radio" name="question6">Every human being is born without knowledge and experience, so every bit of knowledge he or she has has been taught to them. People in countries let a part of their freedom being taken
+away in exchange for safety and existence.<br>
+<input type="radio" name="question6">The trias politica, division of power, has to make sure that each division should not become too powerful and that all the division have to keep each other in balance when it comes to power 
+and influence.<br>
+<input type="radio" name="question6" id="correct6">The existence of God was impossible to prove because humans have a limited cognitive ability. It is impossible for mankind to know and declare everything, since the sensory world 
+is nothing more than what humans perceive.<br>
+<input type="radio" name="question6">God is the same as nature and prophets are mere people. Humans were brought on the world and God would act as an initiator to set all things in motion, such as nature that we try to measure
+with the laws of physics.<br>
+</p>
+
+<span style="background-color:#af4c4c">Q7. What is the right chronological order of these events? 1.The United States drops two atomboms on Japan. 2.World War II has started. 3.Hitler becomes the Reichs chancellor 4.Operation Barbarossa:Germany and Russia both attack Poland<br></span>
+<p style= "padding: 10px; color: white; background-color: #af4c4c; border: #550A21 2px solid">
+<input type="radio" name="question7">1, 2, 3, 4<br>
+<input type="radio" name="question7">4, 3, 1, 2<br>
+<input type="radio" name="question7">4, 2, 1, 3<br>
+<input type="radio" name="question7"id="correct7">3, 4, 2, 1<br>
+</p>
+
+<span style="background-color:#af4c4c">Q8. What is the Act of Abjuration ("Plakkaat van Verlatinghe")?<br></span>
+<p style= "padding: 10px; color: white; background-color: #af4c4c; border: #550A21 2px solid">
+<input type="radio" name="question8">It was an act encacted by the region North-Holland to to renounce the Spanish emperor Phillips II as their leader and to become a republic.<br>
+<input type="radio" name="question8">It was an act encacted by the region North-Holland to to renounce the Spanish emperor Phillips II, but it failed and Phillips II remained sovereign over the Dutch.<br>
+<input type="radio" name="question8" id="correct8">It was an declaration of independence enacted by all the Dutch regions, lead by William of Orange, to renounce the Spanish emperor Phillips II as their leader and to find another leader instead.<br>
+<input type="radio" name="question8">It was an act enacted by Phillips II to get rid of the Netherlands because he thought it would be inefficient to reign over the Netherlands and he was afraid they would 
+turn against him later on and he did not want to wage a war since it would financially cost too much. <br>
+</p>
+
+
+
+
+
+<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct4').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct5').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct6').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct7').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct8').checked)
+		{	score++;
+		}
+ alert("Your score out 10 points is:"+score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang ="en">
+<link rel="stylesheet" href="APICSS.css">
+<head>
+<body>
+<div class="topnav">
+  <a class="active" a href="Homepage.html">Home</a>
+  <a class="active" a href="quiztest.html">HistoQuiz</a>
+  <a class= "active" a href = "question.html">Post a question</a>
+  <a class="active" a href="environment.html">Virtual Rembrandt Room</a>
+  <a class="active" a href="environment_2.html">Virtual Vincent van Gogh Room</a>
+  <a class="active" a href="environment_3.html">Virtual Frans Hals Room </a>
+  </body>
+ </div>
+ 
+ <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://www.holland.com/upload_mm/d/1/9/56727_fullimage_zelfportret_frans_hals_kopie.jpg" style="width:100%">
+  <div class="text">Frans Hals</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://www.holland.com/upload_mm/2/5/2/56781_fullimage_vincent_van_gogh.jpg" style="width:100%">
+  <div class="text">Vincent van Gogh</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://www.assets.avrotros.nl/user_upload/Thema_Kunst/Rembrandt-van-Rijn_-Zelfportret_-1669---Mauritshuis_-Den-Haag.jpg" style="width:100%">
+  <div class="text">Rembrandt van Rijn</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<p style= "padding: 10px; color: white; background-color: #af4c4c; border: #550A21 2px solid">Welcome to HISTO! The application for Dutch high school history students! You can use this app to do our Rijksmuseum quiz!
+Also, if it is not possible to visit our museum, you can have a look in our virtual rooms! Here you can view prominent paintings of Rembrandt van Rijn, Frans Hals, and Vincent van Gogh.
+History is a fun yet hard subject for high school students. Do you think you can come up with a difficult skull cracking question? Send us your question and maybe you'll win our Rijksmuseum reward!</p>
+ 
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>

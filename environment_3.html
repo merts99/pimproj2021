@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang ="en">
+<link rel="stylesheet" href="APICSS.css">
+<head >
+	<script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<head>
+<body>
+<div class="topnav">
+  <a class="active" a href="Homepage.html">Home</a>
+  <a class="active" a href="quiztest.html">HistoQuiz</a>
+  <a class= "active" a href = "question.html">Post a question</a>
+  <a class="active" a href="environment.html">Virtual Rembrandt Room</a>
+  <a class="active" a href="environment_2.html">Virtual Vincent van Gogh Room</a>
+  <a class="active" a href="environment_3.html">Virtual Frans Hals Room </a>
+  </body>
+ </div>
+ 
+<h1 class="glow">The virtual Frans Hals room</h1>
+<h3><b style="color:black;">Welcome to the virtual Frans Hall Room! If you are not able to view his artworks in our museum, try to enjoy them virtually! </b></h3>
+ 
+   <script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&involvedMaker=Frans+Hals", function(data){
+	console.log(data);
+	var Image = "https://lh3.googleusercontent.com/bMCQgUbifzAl-How19Ru06KYgdVuND2pdYzY81zIx3MJ0ld6yqzPnWLVUOu0Aj1JNgK-lFDT2CSjfmQ-erpBdJ6AM4XGAwuQoivxWpJ8=s0";
+	console.log(Image)
+	var Name = data.artObjects[0].longTitle;
+	
+	$('.artwork').attr('src', Image);
+	$('.name_artwork').append(Name);
+})
+
+</script>
+
+<h2>
+<div class = "art-container">
+		<img class = "artwork" width="400" height="300" alt="">
+		<p class = "name_artwork">Name: </p>
+	</div>
+</h2>
+
+<script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&involvedMaker=Frans+Hals", function(data){
+	console.log(data);
+	var Imagee = "https://lh3.googleusercontent.com/yfH3HoYjUOOXNic6f9V3KSgtFGQYxU3lyqsi08F7P8GVHW12saX8oW_sApbSTgTBv-ctXUqCLM82FgHzUamP9Z-ozhCJZKZkb2U3F13z=s0";
+	console.log(Imagee)
+	var Namee = data.artObjects[1].longTitle;
+	
+	$('.artworkk').attr('src', Imagee);
+	$('.name_artworkk').append(Namee);
+})
+
+</script>
+
+<h2>
+<div class = "art-container">
+		<img class = "artworkk" width="400" height="300" alt="">
+		<p class = "name_artworkk">Name: </p>
+	</div>
+</h2>
+
+ <script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&involvedMaker=Frans+Hals", function(data){
+	console.log(data);
+	var Imageee = "https://lh3.googleusercontent.com/og9ahhlCfcwNoKdywzd-xg73fk26OynFV3SK8kzGeJ4xLYBJm8HHDpdhsHxNyuG3H0GNJ_VV6S6b1TqPta4J-J5l02jBwtQNkHj9v3vmww=s0";
+	console.log(Imageee)
+	var Nameee = data.artObjects[2].longTitle;
+	
+	$('.artworkkk').attr('src', Imageee);
+	$('.name_artworkkk').append(Nameee);
+})
+
+</script>
+
+<h2>
+<div class = "art-container">
+		<img class = "artworkkk" width="400" height="300" alt="">
+		<p class = "name_artworkkk">Name: </p>
+	</div>
+</h2>
+
+<script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&involvedMaker=Frans+Hals", function(data){
+	console.log(data);
+	var Imageeee = "https://lh3.googleusercontent.com/k8whv6UpR3jyb7bRrQ5kWXZ_kDtJRsibDPccIaw7IJIcgweBt9nDG7njJDsARrP95Q4hmV_hhqN1QI9s2Xe-WSWApawzKM8LXCrcxD4=s0";
+	console.log(Imageeee)
+	var Nameeee = data.artObjects[3].longTitle;
+	
+	$('.artworkkkk').attr('src', Imageeee);
+	$('.name_artworkkkk').append(Nameeee);
+})
+
+</script>
+
+<h2>
+<div class = "art-container">
+		<img class = "artworkkkk" width="400" height="300" alt="">
+		<p class = "name_artworkkkk">Name: </p>
+	</div>
+</h2>
+
+ <script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&involvedMaker=Frans+Hals", function(data){
+	console.log(data);
+	var Imageeeee = "https://lh3.googleusercontent.com/_z81MaJKdNIvtniyZhBuzH0Hz5ZeOotpklfJ5AugmBOwJcP4_o-fxZPmaSsGwUAZrI1F8V8rG1PqP5gQQB2_b_cSKhaha8glrOyCmo_7=s0";
+	console.log(Imageeeee)
+	var Nameeeee = data.artObjects[4].longTitle;
+	
+	$('.artworkkkkk').attr('src', Imageeeee);
+	$('.name_artworkkkkk').append(Nameeeee);
+})
+
+</script>
+
+<h2>
+<div class = "art-container">
+		<img class = "artworkkkkk" width="400" height="300" alt="">
+		<p class = "name_artworkkkkk">Name: </p>
+	</div>
+</h2>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang ="en">
+<link rel="stylesheet" href="APICSS.css">
+<head >
+	<script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<head>
+<body>
+<div class="topnav">
+  <a class="active" a href="Homepage.html">Home</a>
+  <a class="active" a href="quiztest.html">HistoQuiz</a>
+  <a class= "active" a href = "question.html">Post a question</a>
+  <a class="active" a href="environment.html">Virtual Rembrandt Room</a>
+  <a class="active" a href="environment_2.html">Virtual Vincent van Gogh Room</a>
+  <a class="active" a href="environment_3.html">Virtual Frans Hals Room </a>
+  </body>
+ </div>
+ 
+<h1 class="glow">The virtual Vincent van Gogh room</h1>
+ <h3><b style="color:black;">Welcome to the virtual Vincent van Gogh Room! If you are not able to view his artworks in our museum, try to enjoy them virtually!</b></h3>
+ 
+  <script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&involvedMaker=Vincent+van+Gogh", function(data){
+	console.log(data);
+	var Image = "https://lh3.googleusercontent.com/Ckjq-HkB2XhEsbuMsei0MR5fLTODfkcXY8qQTG-XLHVxE0jLO9DnSYaVE8n1kCrcm9AMKzoWB2w03LrY0v7eoj5hYw=s0";
+	console.log(Image)
+	var Name = data.artObjects[0].longTitle;
+	
+	$('.artwork').attr('src', Image);
+	$('.name_artwork').append(Name);
+})
+
+</script>
+
+<h2>
+<div class = "art-container">
+		<img class = "artwork" width="400" height="300" alt="">
+		<p class = "name_artwork">Name: </p>
+	</div>
+</h2>
+
+<script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&involvedMaker=Vincent+van+Gogh", function(data){
+	console.log(data);
+	var Imagee = "https://lh6.ggpht.com/d91eLpUD7w8vhaGPWNvuzmkUmo9xwAyhj79cxoobWCYeCIKPI3mCMir86UiZgWP0J7ip5D0qCxhvbvV0wutoyr8PnYQ=s0";
+	console.log(Imagee)
+	var Namee = data.artObjects[1].longTitle;
+	
+	$('.artworkk').attr('src', Imagee);
+	$('.name_artworkk').append(Namee);
+})
+
+</script>
+
+<h2>
+<div class = "art-container">
+		<img class = "artworkk" width="400" height="300" alt="">
+		<p class = "name_artworkk">Name: </p>
+	</div>
+</h2>
+
+
+ <script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&involvedMaker=Vincent+van+Gogh", function(data){
+	console.log(data);
+	var Imageee = "https://lh3.googleusercontent.com/rN30IB00bIGEgTm9OFA9U0yf4if6y7RhdKqvOVKd2Gf1wLmmqyCRP7Ok_QlJML5PPaZHyWnKN1vcPjcb_EC0pu63Xi0=s0";
+	console.log(Imageee)
+	var Nameee = data.artObjects[2].longTitle;
+	
+	$('.artworkkk').attr('src', Imageee);
+	$('.name_artworkkk').append(Nameee);
+})
+
+</script>
+
+<h2>
+<div class = "art-container">
+		<img class = "artworkkk" width="400" height="300" alt="">
+		<p class = "name_artworkkk">Name: </p>
+	</div>
+</h2>
+
+<script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&involvedMaker=Vincent+van+Gogh", function(data){
+	console.log(data);
+	var Imageeee = "https://lh6.ggpht.com/RvKoP3sO4nXgRlIvSGLDcezVPQoaNOukS8uvv2JRUrhMbMV9VBD0bLFOA9vmg44Nq1Lh9VNLx0oxM1FnzT7a4RO3Tmdx=s0";
+	console.log(Imageeee)
+	var Nameeee = data.artObjects[3].longTitle;
+	
+	$('.artworkkkk').attr('src', Imageeee);
+	$('.name_artworkkkk').append(Nameeee);
+})
+
+</script>
+
+<h2>
+<div class = "art-container">
+		<img class = "artworkkkk" width="400" height="300" alt="">
+		<p class = "name_artworkkkk">Name: </p>
+	</div>
+</h2>
+
+ <script>
+$.getJSON("https://www.rijksmuseum.nl/api/nl/collection?key=QGsSgNjU&involvedMaker=Vincent+van+Gogh", function(data){
+	console.log(data);
+	var Imageeeee = "https://lh4.ggpht.com/p0gQfwn5ryZ6Fazbkv9dG2MGXJlZF0SGuzQRwyBm8W-7H-JhYUgdhkh6R2iDstWCMaAk-Sisg5O1Z1PM4GVGL0xNZHIL=s0";
+	console.log(Imageeeee)
+	var Nameeeee = data.artObjects[4].longTitle;
+	
+	$('.artworkkkkk').attr('src', Imageeeee);
+	$('.name_artworkkkkk').append(Nameeeee);
+})
+
+</script>
+
+<h2>
+<div class = "art-container">
+		<img class = "artworkkkkk" width="400" height="300" alt="">
+		<p class = "name_artworkkkkk">Name: </p>
+	</div>
+</h2>
+
